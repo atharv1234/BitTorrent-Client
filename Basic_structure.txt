@@ -1,0 +1,51 @@
+# Important metadata
+class torrent_metadata():
+
+    # usefull metadata from torrent file
+    def __init__(self, trackers_url_list, file_name, file_size, piece_length, pieces):
+           # list   : URL of trackers
+                   # string : file name 
+                    # int    : file size in bytes
+                     # int    : piece length in bytes
+
+
+# Torrent File reader function
+class torrent_file_reader(torrent_metadata):
+    
+    # parameterized constructor 
+    def __init__(self, torrent_file_path):
+        
+        
+        # formatted metadata from the torrent file
+        
+        #announce list  check if there is list of trackers 
+        
+        # file name 
+        # piece length in bytes
+            
+        # files is list of tuple of size and path in case of multifile torrent
+
+        # check if torrent file contains multiple paths  and else condition for single path
+        return
+    
+
+    def extract_metadata(self, file):
+        # torrent metadata is ordered dictionary 
+        #save info for the particular key in the ordered dictionary
+        return
+
+
+    # return the torrent instance 
+    def data_output(self):
+        return torrent_metadata(self.trackers_url_list, self.file_name, 
+                                self.file_size,         self.piece_length,      
+                                self.pieces)
+
+    
+
+    def __str__(self):
+        # provides torrent file full information
+        return
+            
+torrent_info = torrent_file_reader(file)
+print(torrent_info)
